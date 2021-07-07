@@ -1,0 +1,333 @@
+article{
+  width: 100%;
+  overflow: hidden;
+  font-family: $font-stack;
+}
+header{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #999;
+}
+section{
+  overflow: hidden;
+  width: 100%;
+  height: 100vw;
+}
+.hp__grid{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 5rem auto 7rem 4rem;
+  grid-template-areas:
+      "text"
+      "image"
+      "resource"
+      "button";
+}
+.p__grid{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 5rem auto 7rem;
+  grid-template-areas:
+      "name"
+      "image"
+      "text";
+}
+
+.a__text{
+  grid-area: text;
+  z-index: 1;
+  width: 90vw;
+  margin: 2rem auto 0;
+}
+
+.a__name{
+ margin: 0;
+}
+.a__subname {
+  margin: 0;
+  font-weight: 600;
+}
+.a__resource{
+  grid-area: resource;
+  margin: 0 0 0 1rem;
+font-size: .9rem;
+  padding-right: 1rem;
+}
+
+.a__button{
+  grid-area: button;
+  justify-self: center;
+  align-self: start;
+
+  a {
+    border: 1px solid;
+    border-radius: 3px;
+    color: white;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    font-weight: 600;
+  }
+}
+.a__image{
+  grid-area: image;
+  z-index: 0;
+  position: relative;
+
+  img{
+    position: absolute;
+    top: -20;
+    opacity: 0;
+
+  }
+}
+
+#monica{
+  width: 100%;
+  height: 100vh;
+  background-color: $color-mo;
+  color: white;
+}
+#tte{
+  width: 100%;
+  height: 100vh;
+  background-color: $color-tte;
+  color: white;
+}
+#tp{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  color: #0075b0;
+
+  a{
+    color:#0075b0;
+  }
+}
+
+#aspen{
+  width: 100%;
+  height: 100vh;
+  background-color: lighten($color-aspen, 50%);
+  color: $color-aspen;
+
+  a{
+    color: $color-aspen;
+  }
+}
+.i__monica{
+  width: 140%;
+  left: -.5rem;
+}
+.i__tp{
+  position: absolute;
+  width: 150%;
+  padding-top: 2rem;
+  left: -10rem;
+}
+.i__aspen{
+  width: 75%;
+  height: 100%;
+  margin: 2rem auto 0;
+  position: absolute;
+  top: 0;
+  left: 12vw;
+  box-shadow: 2px 2px 7px 3px #777;
+
+}
+.i__iss{
+  width: 120%;
+  padding-top: 10rem;
+  left: -2rem;
+}
+
+
+
+
+
+/**********************  PORTFOLIO PAGES  *************************/
+
+.panel {
+  height: 100vh;
+  width:100%;
+  font-family: $font-stack;
+}
+
+.horizontal {
+  width: 100%;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:column;
+  position: fixed;
+  height:100vh;
+  font-family: $font-stack;
+}
+
+.scroll {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+
+.fixed_port {
+  padding: .2rem ;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1rem;
+  z-index: 10;
+
+  h1{
+    line-height: 1.1;
+    opacity: 1;
+    margin: 0;
+
+  }
+
+  a{
+    text-decoration: none;
+    font-size: 1rem;
+  }
+}
+
+.portfolio{
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 100%;
+  grid-template-rows: 20vh 70vh 10vh;
+  grid-template-areas:
+      "name"
+      "image"
+      "text";
+}
+.p__name{
+  grid-area: name;
+  z-index: 1;
+  color: $color-primary;
+  align-self: end;
+  margin: 0 0 0 1rem;
+
+  h4{
+    color: $color-primary;
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+}
+.p__image{
+  grid-area: image;
+  overflow: visible;
+  width: 100%;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: -2rem;
+    width: 100%;
+  }
+
+}
+.p__text{
+  z-index: 1;
+  grid-area: text;
+  font-size: 1rem;
+  color: $color-primary;
+  margin: 0 0 0 1rem;
+}
+
+
+
+
+
+
+
+/*  END OF SMART PHONE  */
+@media screen and (min-width : 500px) {
+  .a__image{
+
+
+  }
+  .i__monica{
+   left: 10vw;
+    width: 90%;
+  }
+  .i__tp{
+    width: 110%;
+  }
+
+  /*  END 550PX  */
+}
+
+
+
+@media screen and (min-width : 650px) {
+  .a__image {
+
+  }
+  .i__monica {
+
+  }
+  .i__tp{
+
+  }
+
+  /*  END 650PX  */
+}
+
+
+
+/*  DESKTOP  */
+@media screen and (min-width : 785px) {
+
+  section{
+    grid-template-columns: 30vw 70vw;
+    grid-template-rows: 50vh 50vh;
+    grid-template-areas:
+      "text image"
+      "button image";
+    column-gap: 5vw;
+  }
+  .a__text{
+    align-self: end;
+
+  }
+  .text__block{
+
+  }
+  .a__name{
+    margin: 0 0 0 4rem;
+  }
+  .a__subname {
+    margin: 0 0 0 4rem;
+  }
+  .a__resource{
+
+  }
+  .a__button{
+    margin: 0 0 0 4rem;
+    align-self: start;
+    justify-self: start;
+    a {
+
+    }
+  }
+  .a__image{
+    justify-content: start;
+
+    img{
+      top: 10vh;
+      left: 0;
+    }
+  }
+
+
+  .i__monica {
+
+  }
+  .i__tp{
+
+  }
+
+  /*  END 785PX Desktop  */
+}
+
