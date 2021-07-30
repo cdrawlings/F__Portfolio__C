@@ -1,27 +1,46 @@
+
+
+/*  Header  */
+
+header{
+  background-color: $color-primary;
+  width: 100vw;
+  height: 100vh;
+  font-family: $font-stack;
+  position: relative;
+  overflow: hidden;
+}
+.h__skill {
+  margin-bottom: 0;
+}
+.h__opening {
+  width: 70vw;
+  margin-top: 0;
+
+  p {
+    margin-top: 0;
+  }
+}
+
+
 article{
   width: 100%;
   overflow: hidden;
   font-family: $font-stack;
 }
-header{
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  background-color: #999;
-}
+
 section{
   overflow: hidden;
   width: 100%;
   height: 100vw;
 }
-.hp__grid{
+.agency__grid{
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 5rem auto 7rem 4rem;
+  grid-template-rows: 7rem auto 4rem ;
   grid-template-areas:
       "text"
       "image"
-      "resource"
       "button";
 }
 .p__grid{
@@ -38,9 +57,15 @@ section{
   grid-area: text;
   z-index: 1;
   width: 90vw;
-  margin: 2rem auto 0;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  position: relative;
 }
-
+.text__block{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
 .a__name{
  margin: 0;
 }
@@ -48,17 +73,14 @@ section{
   margin: 0;
   font-weight: 600;
 }
-.a__resource{
-  grid-area: resource;
-  margin: 0 0 0 1rem;
-font-size: .9rem;
-  padding-right: 1rem;
-}
 
 .a__button{
   grid-area: button;
   justify-self: center;
   align-self: start;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  z-index: 2;
 
   a {
     border: 1px solid;
@@ -72,13 +94,16 @@ font-size: .9rem;
 .a__image{
   grid-area: image;
   z-index: 0;
+  width: 100%;
   position: relative;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
 
   img{
     position: absolute;
-    top: -20;
+    object-fit: contain;
+    object-position: 50% 505;
     opacity: 0;
-
   }
 }
 
@@ -87,6 +112,11 @@ font-size: .9rem;
   height: 100vh;
   background-color: $color-mo;
   color: white;
+
+  img{
+    width: 140%;
+    left: -3vw;
+  }
 }
 #tte{
   width: 100%;
@@ -115,33 +145,6 @@ font-size: .9rem;
     color: $color-aspen;
   }
 }
-.i__monica{
-  width: 140%;
-  left: -.5rem;
-}
-.i__tp{
-  position: absolute;
-  width: 150%;
-  padding-top: 2rem;
-  left: -10rem;
-}
-.i__aspen{
-  width: 75%;
-  height: 100%;
-  margin: 2rem auto 0;
-  position: absolute;
-  top: 0;
-  left: 12vw;
-  box-shadow: 2px 2px 7px 3px #777;
-
-}
-.i__iss{
-  width: 120%;
-  padding-top: 10rem;
-  left: -2rem;
-}
-
-
 
 
 
