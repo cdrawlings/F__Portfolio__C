@@ -103,7 +103,7 @@ section{
   img{
     position: absolute;
     object-fit: contain;
-    object-position: 50% 505;
+    object-position: 50% 50%;
     opacity: 0;
   }
 }
@@ -255,13 +255,32 @@ section{
     line-height: 1.1;
     opacity: 1;
     margin: 0;
-
   }
 
   a{
     text-decoration: none;
     font-size: 1rem;
   }
+}
+.back__btn{
+  position: fixed;
+  right: 1.5rem;
+  top: 1.5rem;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  pointer-events: visible;
+  cursor: pointer;
+  z-index: 2;
+}
+.back__btn--tp{
+  @extend .back__btn;
+  color: $color-tp;
+  background-color: lighten($color-tp, 60%);
 }
 
 .portfolio{
@@ -277,12 +296,12 @@ section{
 .p__name{
   grid-area: name;
   z-index: 1;
-  color: $color-primary;
   align-self: end;
-  margin: 0 0 0 1rem;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin: 0 0 0 1.5rem;
 
   h4{
-    color: $color-primary;
     font-size: 1.3rem;
     font-weight: 400;
   }
@@ -290,23 +309,46 @@ section{
 .p__image{
   grid-area: image;
   overflow: visible;
-  width: 100%;
   position: relative;
+  object-fit: contain;
+  object-position: 50% 50%;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  z-index: 0;
+  width: 100%;
 
   img {
     position: absolute;
-    top: -2rem;
-    width: 100%;
+    width: 59%;
   }
-
 }
 .p__text{
   z-index: 1;
   grid-area: text;
   font-size: 1rem;
-  color: $color-primary;
-  margin: 0 0 0 1rem;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  margin: 0 0 0 1.5rem;
 }
+.redefining_image{
+  img{
+    width: 100%;
+  }
+}
+.tp-icon_image{
+  img{
+    width: 100%;
+  }
+}
+.tp-col_image{
+  img{
+    width: 100%;
+  }
+}
+.tp__text{
+  color: $color-tp;
+}
+
 
 
 
@@ -410,7 +452,7 @@ section{
     img{
       position: absolute;
       object-fit: contain;
-      object-position: 50% 505;
+      object-position: 50% 50%;
       opacity: 0;
     }
   }
