@@ -362,7 +362,7 @@ section{
 }
 .asp-alt_image{
   width: 100%;
-  margin: 0 auto;
+  margin: 0 0 0 2rem;
   img{
     width: 100%;
   }
@@ -381,6 +381,28 @@ section{
   img{
     width: 100%;
 
+  }
+}
+.iss_image-bezel{
+  width: 100%;
+  margin: 0 auto;
+  img{
+    width: 100%;
+
+  }
+}
+.iss_image-ill{
+  width: 100%;
+  margin: 0 auto;
+  img{
+    width: 100%;
+  }
+}
+.iss_image-col{
+  width: 100%;
+  margin: 0 0 0 -5vw;
+  img{
+    width: 110%;
   }
 }
 .tp__text{
@@ -414,19 +436,19 @@ section{
   #tp {
     .a__image {
       img {
-        width: 120%;
-        left: -10vw;
+        width: 90%;
+        left: 0;
       }
     }
   }
 
   #aspen{
     .a__image {
-      width: 50%;
-      margin: 0 auto;
+      width: 120%;
+      margin: 0 0 0 2rem;
       img {
         width: 100%;
-        box-shadow: 2px 2px 7px 3px #777;
+
       }
     }
   }
@@ -469,7 +491,7 @@ section{
 
   }
   .text__block{
-    top: -17vh;
+    top: -8vh;
     left: 3rem;
   }
   .a__button{
@@ -478,7 +500,7 @@ section{
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     z-index: 2;
-    margin: 0 0 0 3rem;
+    margin: 3rem 0 0 3rem;
 
   }
   .a__image{
@@ -497,9 +519,9 @@ section{
 
   #monica{
      img{
-      width: 120%;
+      width: 120vh;
       left: 5vw;
-       top: 5vh;
+       top: 2vh;
     }
 
   }
@@ -507,16 +529,16 @@ section{
 
 
     img{
-      width: 120%;
+      width: 120vh;
       left: 5vw;
-      top: 5vh;
+      top: 2vh;
     }
   }
   #tp{
     .a__image {
       img {
-        width: 120%;
-        left: -5vw;
+        width: 100vh;
+        left: -10vw;
         top: 0;
       }
     }
@@ -524,14 +546,14 @@ section{
 
   #aspen{
     .a__image {
-      width: 40%;
-      margin: 5vh auto 0;
+      width: 130vh;
+      margin: 5vh 0 0 1rem;
     }
   }
   #iss{
     .a__image{
       img{
-        width: 100%;
+        width: 100vh;
         left: -5vw;
         top: 24vh;
       }
