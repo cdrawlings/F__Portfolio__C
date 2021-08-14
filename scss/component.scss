@@ -336,6 +336,7 @@ section{
 
   img{
     width: 60vh;
+    left: 0;
   }
 }
 .tp-icon_image{
@@ -694,6 +695,133 @@ section{
         left: -5vw;
         top: 24vh;
       }
+    }
+  }
+
+  .portfolio{
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "name image"
+      "text image";
+  }
+
+  .p__name{
+    align-self: end;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 55vh 0 0 2.3rem;
+
+    h4{
+      margin-top: 0;
+    }
+  }
+
+  .p__image{
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    align-self: start;
+    img {
+
+    }
+  }
+
+  .p__image{
+    grid-area: image;
+    overflow: visible;
+    position: relative;
+    object-fit: contain;
+    object-position: 50% 50%;
+    z-index: 0;
+    img {
+      position: absolute;
+    }
+  }
+
+  .p__text{
+    font-size: 1rem;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin: -1rem 0 0 2.3rem;
+    align-self: start;
+    width: 33vw;
+  }
+
+  .redefining_image{
+    img{
+      width: 80vh;
+      left: -10vw;
+    }
+  }
+  .tp-icon_image{
+    width: 100%;
+    margin: 20vh 0 0 -10vw;
+    .icon{
+      width: 100px;
+      height: 100px;
+      margin: 8px;
+
+      img{
+        width: 100px;
+      }
+    }
+
+  }
+  .tp-col_image{
+    margin: 8em 0 0 -7vw;
+    img{
+      width: 60vh;
+    }
+  }
+  .asp-alt_image{
+    width: 100%;
+    margin: 5rem 0 0 -12vw;
+    img{
+      width: 140%;
+    }
+  }
+  .asp-print_image{
+    width: 100%;
+    margin: 9rem 0 0 -12vw;
+    img{
+      width: 120%;
+    }
+  }
+  .asp-col_image{
+    width: 90%;
+    margin: 5rem 0 0 -12vw;
+    img{
+      width: 120%;
+    }
+  }
+  .iss_image-bezel{
+    width: 100%;
+    margin: 15rem auto 0;
+    img{
+      width: 100%;
+
+    }
+  }
+  .iss_image-ill{
+    width: 100%;
+    margin: 9rem 0 0 -10vw;
+    display: flex;
+    justify-content: center;
+
+    img{
+      width: 85%;
+    }
+  }
+  .iss_image-col{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0 0 -5vw;
+    img{
+      width: 130%;
+      justify-self: center;
     }
   }
 
