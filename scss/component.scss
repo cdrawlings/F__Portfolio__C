@@ -243,30 +243,23 @@ section{
 }
 
 .fixed_port {
-  padding: .2rem ;
   position: fixed;
-  top: 1rem;
-  left: 1rem;
-  font-size: 1rem;
+  top: 1.3rem;
+  left: 1.3rem;
   z-index: 10;
 
   h1{
     width: 75vw;
-    line-height: 1.7rem;
+    line-height: 1.6rem;
     opacity: 1;
     margin: 0;
-    font-size: 1.5rem;
-  }
-
-  a{
-    text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 }
 .back__btn{
   position: fixed;
-  right: 1.5rem;
-  top: 1.5rem;
+  right: 1.3rem;
+  top: 1.3rem;
   border-radius: 50%;
   width: 2rem;
   height: 2rem;
@@ -288,7 +281,7 @@ section{
   display: grid;
   overflow: hidden;
   grid-template-columns: 100%;
-  grid-template-rows: 20vh 70vh 10vh;
+  grid-template-rows: 20vh 65vh 15vh;
   grid-template-areas:
       "name"
       "image"
@@ -300,11 +293,16 @@ section{
   align-self: end;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  margin: 0 0 0 1rem;
+  margin: 0 0 0 1.3rem;
+  position: relative;
 
   h4{
     font-size: 1.3rem;
-    font-weight: 400;
+    font-weight: 600;
+    position: absolute;
+    top: -3.8rem;
+    margin-top: 0;
+
   }
 }
 .p__image{
@@ -317,10 +315,8 @@ section{
   grid-row: 2 / 3;
   z-index: 0;
   width: 100%;
-
   img {
     position: absolute;
-    width: 59%;
   }
 }
 .p__text{
@@ -329,35 +325,43 @@ section{
   font-size: 1rem;
   grid-column: 1 / 2;
   grid-row: 3 / 4;
-  margin: 0 0 0 1.5rem;
+  margin: 0 0 1rem 1.3rem;
+  align-self: end;
+  width: 80vw;
+  position: relative;
 }
 .redefining_image{
+  display: flex;
+  justify-content: center;
+
   img{
-    width: 100%;
+    width: 60vh;
   }
 }
 .tp-icon_image{
   display: inline-flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 100%;
-  margin: 0 auto;
   flex-direction: row;
   justify-content: space-evenly;
+
   .icon{
-    width: 100px;
-    height: 100px;
-    margin: 10px;
+    width: 70px;
+    height: 70px;
+    margin: 8px;
 
     img{
-      width: 100px;
+      width: 70px;
     }
   }
 
 }
 .tp-col_image{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
   img{
-    width: 100%;
+    width: 90vw;
   }
 }
 .asp-alt_image{
@@ -385,7 +389,7 @@ section{
 }
 .iss_image-bezel{
   width: 100%;
-  margin: 0 auto;
+  margin: 3rem auto 0;
   img{
     width: 100%;
 
@@ -468,6 +472,139 @@ section{
       }
     }
   }
+
+
+  /********************** 550 PORTFOLIO *************************/
+
+  .fixed_port {
+    top: 2.5rem;
+    left: 2.5rem;
+
+    h1{
+      font-size: 2rem;
+    }
+  }
+  .back__btn{
+    right: 2.3rem;
+    top: 2.3rem;
+
+  }
+
+  .p__grid{
+    grid-template-rows: auto 5vh 10vh;
+    grid-template-areas:
+      "image"
+      "name"
+      "text";
+  }
+  .p__name{
+    align-self: end;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin: 0 0 0 2.3rem;
+    h4{
+      margin-top: 4rem;
+    }
+  }
+
+  .p__image{
+  ;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: center;
+    img {
+    }
+  }
+
+  .p__text{
+    font-size: 1rem;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    margin: 2rem 0 0 2.3rem;
+    align-self: start;
+  }
+
+
+  .redefining_image{
+    img{
+      width: 60vh;
+    }
+  }
+  .tp-icon_image{
+    width: 70%;
+    margin: 30rem auto 0;
+    .icon{
+      width: 100px;
+      height: 100px;
+      margin: 8px;
+
+      img{
+        width: 100px;
+      }
+    }
+
+  }
+  .tp-col_image{
+    margin-top: 3rem;
+    img{
+      width: 60vh;
+    }
+  }
+  .asp-alt_image{
+    width: 100%;
+    margin: 5rem 0 0 2rem;
+    img{
+      width: 100%;
+    }
+  }
+  .asp-print_image{
+    width: 100%;
+    margin: 5rem auto 0;
+    img{
+      width: 100%;
+
+    }
+  }
+  .asp-col_image{
+    width: 90%;
+    margin: 5rem auto 0;
+    img{
+      width: 100%;
+
+    }
+  }
+  .iss_image-bezel{
+    width: 100%;
+    margin: 15rem auto 0;
+    img{
+      width: 100%;
+
+    }
+  }
+  .iss_image-ill{
+    width: 100%;
+    margin: 4rem auto 0;
+    display: flex;
+    justify-content: center;
+
+    img{
+      width: 85%;
+
+
+    }
+  }
+  .iss_image-col{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 3rem auto 0;
+    img{
+      width: 90%;
+      justify-self: center;
+    }
+  }
+
+
 
   /*  END  550PX  */
 }
