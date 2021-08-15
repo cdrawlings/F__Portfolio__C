@@ -684,8 +684,8 @@ section{
 
   #aspen{
     .a__image {
-      width: 130vh;
-      margin: 5vh 0 0 1rem;
+      width: 110vh;
+      margin: 5vh 0 0 3rem;
     }
   }
   #iss{
@@ -720,21 +720,15 @@ section{
   }
 
   .p__image{
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
-    align-self: start;
-    img {
-
-    }
-  }
-
-  .p__image{
     grid-area: image;
     overflow: visible;
     position: relative;
     object-fit: contain;
-    object-position: 50% 50%;
+    object-position: 50% 50%0;
     z-index: 0;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    align-self: start;
     img {
       position: absolute;
     }
@@ -784,7 +778,7 @@ section{
   }
   .asp-print_image{
     width: 100%;
-    margin: 9rem 0 0 -12vw;
+    margin: 6rem 0 0 -12vw;
     img{
       width: 120%;
     }
@@ -798,9 +792,9 @@ section{
   }
   .iss_image-bezel{
     width: 100%;
-    margin: 15rem auto 0;
+    margin: 15rem  0 0 -15vh;
     img{
-      width: 100%;
+      width: 80vh;
 
     }
   }
@@ -811,16 +805,16 @@ section{
     justify-content: center;
 
     img{
-      width: 85%;
+      width: 70vh;
     }
   }
   .iss_image-col{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 4rem 0 0 -5vw;
+    margin: 6rem 0 0 -5vw;
     img{
-      width: 130%;
+      width: 90vh;
       justify-self: center;
     }
   }
